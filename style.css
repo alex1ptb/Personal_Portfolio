@@ -37,7 +37,7 @@ a{
 a:hover{
     text-decoration: underline;
     transform: scale(1.04);
-    color: rgb(8, 75, 218)  ;
+    color: white;
     /* text-shadow: 1px 1px 1px #917d0d; */
 }
 
@@ -87,11 +87,17 @@ section{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ), url("imgs/hero.jpg");
-    /* fit background image */
     background-size: cover;
-    color: white;
-    font-size: 1.5em;
 }
+
+
+#welcome-section h1{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+}
+
 
 #projects{
     flex-direction: row;
@@ -115,7 +121,6 @@ section{
 .card:hover{
     transform: scale(1.01);
     box-shadow: #917d0d 0px 0px 10px;
-    /* text-shadow: 1px 1px 1px ; */
 }
 
 .card-body{
@@ -127,10 +132,7 @@ section{
 }
 
 .card-body h2{
-    border-bottom: black solid 1px;
-    /* text outline gold */
-    /* text-shadow: 1px 1px 1px blue; */
-   color: #917d0d; 
+    border-bottom: gray solid 1px;
 }
 
 .card-body img{
@@ -146,6 +148,7 @@ section{
     padding: 10px;
     border-radius: 2%;
     border:#917d0d solid 1px;
+    background-color: black;
 }
 
 @media screen and (min-width: 100px){
