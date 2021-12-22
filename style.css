@@ -21,7 +21,7 @@ body{
     align-items: center;
     width: 100%;
     background-color: #000;
-    color: gray;
+    color: #917d0d;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -29,7 +29,7 @@ body{
 }
 
 a{
-    color: gray;
+    color:#917d0d ;
     text-decoration: none;
     padding: 10px;
 }
@@ -37,7 +37,8 @@ a{
 a:hover{
     text-decoration: underline;
     transform: scale(1.04);
-    color: rgb(59, 165, 38);
+    color: rgb(8, 75, 218)  ;
+    /* text-shadow: 1px 1px 1px #917d0d; */
 }
 
 
@@ -56,8 +57,6 @@ header{
 
 #navbar{
     display: flex;
-    /* reverse row */
-    /* flex-direction: row-reverse; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -83,7 +82,11 @@ section{
 
 #welcome-section{
     height: 100vh;
-    background-image: url("imgs/hero.jpg");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("imgs/hero.jpg");
     /* fit background image */
     background-size: cover;
     color: white;
@@ -106,11 +109,13 @@ section{
     border-radius: 10px;
     margin: 15px 0px;
     box-shadow: gray 0px 0px 10px;
+    background-color: #3b383893;
 }
 
 .card:hover{
     transform: scale(1.01);
-    box-shadow: rgb(59, 165, 38) 0px 0px 10px;
+    box-shadow: #917d0d 0px 0px 10px;
+    /* text-shadow: 1px 1px 1px ; */
 }
 
 .card-body{
@@ -123,7 +128,9 @@ section{
 
 .card-body h2{
     border-bottom: black solid 1px;
-    color:rgb(59, 165, 38);
+    /* text outline gold */
+    /* text-shadow: 1px 1px 1px blue; */
+   color: #917d0d; 
 }
 
 .card-body img{
@@ -138,7 +145,7 @@ section{
     outline: black solid 1px;
     padding: 10px;
     border-radius: 2%;
-    border:rgb(59, 165, 38) solid 1px;
+    border:#917d0d solid 1px;
 }
 
 @media screen and (min-width: 100px){
